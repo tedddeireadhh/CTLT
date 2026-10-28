@@ -15,8 +15,6 @@ def parse_S(list_sentence, start: int, end: int) -> bool:
         print(f"S from {start} to {j} is NOT ok")
         return False
 
-
-
 def parse_NP(list_sentence, start: int, end: int) -> bool:
     print(f"brr brr: is it NP von {start} bis {end}?")
     if end == start + 1:
@@ -47,7 +45,6 @@ def parse_VP(list_sentence, start: int, end: int) -> bool:
         print(f"VP from {start} to {end}? -> no")
         return False
 
-
 def parse_N(list_sentence, start: int, end: int) -> bool:
     print(f"Call: N from {start} to {end}?")
 
@@ -62,8 +59,6 @@ def parse_N(list_sentence, start: int, end: int) -> bool:
 
     print(f"N from {start} to {end}? -> no")
     return False
-
-
 
 def parse_V(list_sentence, start: int, end: int) -> bool:
     print(f"Call: V von {start} bis {end}?")
