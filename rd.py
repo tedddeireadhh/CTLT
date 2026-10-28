@@ -81,4 +81,24 @@ def parse_Det(list_sentence: list, start: int, end: int) -> bool:
         print(f"Det von {start} bis {end}?-> ja")
         return True
     else:
+        print(f"Det from {start} to {end}? -> no")
         return False
+
+if __name__ == "__main__":
+    # --- Satz 1 ---
+    print("=" * 50)
+    print("Trace für Satz 1: 'Hans isst ein Kaesebrot'")
+    print("=" * 50)
+    s1 = ["Hans", "isst", "ein", "Kaesebrot"]
+    res1 = parse_S(s1, 0, len(s1))
+    print(res1)
+
+    print("\n\n" + "-" * 50 + "\n\n")
+
+    # --- Satz 2 ---
+    print("=" * 50)
+    print("Trace für Satz 2: 'Kaesebrot isst Hans'")
+    print("=" * 50)
+    s2 = ["Kaesebrot", "isst", "Hans"]
+    res2 = parse_S(s2, 0, len(s2))
+    print(res2)
